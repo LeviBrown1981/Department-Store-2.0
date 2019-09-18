@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from "axios";
-import { Form, Header, } from "semantic-ui-react";
+import { Form, } from "semantic-ui-react";
+import HeaderText from "./styles/HeaderText";
 
 class StoresForm extends React.Component {
   defaultValues = { name: "", price: "", description: "", department: "", };
@@ -27,7 +28,7 @@ class StoresForm extends React.Component {
 
     return (
       <div>
-        <Header as="h1">New Store</Header>
+        <HeaderText fSize="large">New Store</HeaderText>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group widths="equal">
             <Form.Input
@@ -63,7 +64,7 @@ class StoresForm extends React.Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <Form.Button color="blue">Submit</Form.Button>
+          <Form.Button color="violet">Submit</Form.Button>
         </Form>
       </div>
     )

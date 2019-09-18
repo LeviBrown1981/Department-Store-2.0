@@ -15,12 +15,14 @@ const Navbar = () => (
       </Menu.Item>
     </Link>
     <Link to="/stores">
-      <Menu.Item class="inverted green button">
+      <Menu.Item class="inverted pink button">
         Store
       </Menu.Item>
     </Link>
   </Menu>
 );
+
+
 
 
 export default Navbar;
