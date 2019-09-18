@@ -2,11 +2,11 @@ class Api::StoresController < ApplicationController
   before_action :set_store only:[:show, :update, :destroy]
 
   def index
-    render json = Store.all
+    render json: = Store.all
   end
 
   def show
-    render json = @store
+    render json: = @store
   end
 
   def create
@@ -23,6 +23,7 @@ class Api::StoresController < ApplicationController
       render json: @store
     else
       render json: store.error status: 422
+    end
   end
 
   def destroy
@@ -37,6 +38,5 @@ class Api::StoresController < ApplicationController
   def store_params
     params.require(:store).permit(:name, :description, :price, :department)
   end
-
 
 end
