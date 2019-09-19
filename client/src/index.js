@@ -11,10 +11,10 @@ const theme = {
 };
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
   <BrowserRouter>
+    <ThemeProvider theme={theme}>
     <App />
+    </ThemeProvider>,
   </BrowserRouter>,
-  </ThemeProvider>,
   document.getElementById('root')
 );

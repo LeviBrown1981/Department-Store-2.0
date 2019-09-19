@@ -5,7 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Stores from './components/Stores';
-import StoresForm from './components.StoresForm';
+// import StoresForm from './components.StoresForm';
 import StoreView from './components/StoreView';
 import NoMatch from './components/NoMatch';
 
@@ -18,7 +18,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/Stores" component={Stores} />
-        <Route exact path="/StoresForm" component={StoresForm} />
+        {/* <Route exact path="/StoresForm" component={StoresForm} /> */}
         <Route exact path="/stores/:id" component={StoreView} />
         <Route component={NoMatch} />
       </Switch>
